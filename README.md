@@ -10,7 +10,7 @@ Note that this software is currently under development, and I am not responsible
 
 ## Setup
 
-Install Quinnat via `pip`:
+Install Quinnat via `pip`.
 
 Copy `example.ini` to `default.ini`, and modify it as appropriate to meet your needs.
 
