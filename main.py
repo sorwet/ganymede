@@ -19,6 +19,7 @@ urbitClient.post_message(urbitHost, urbitChat, {"text": messageWelcome})
 
 def dot_ack(message, replier):
     if "." == message.full_text:
+        replier({"mention": "~" + message.author})
         replier({"text": messageAck})
 
 urbitClient.listen(dot_ack)
