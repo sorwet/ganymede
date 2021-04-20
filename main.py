@@ -27,7 +27,6 @@ def dot_ack(message, replier):
     if 1 == len(message.full_text):
         logging.info('received dotpost "' + message.full_text + '" from ~' + message.author)
         logging.info('sending "' + messageAck + '" to ~' + message.author)
-        replier({"mention": "~" + message.author})
-        replier({"text": messageAck})
+        replier({"mention": "~" + message.author}, {"text": messageAck})
 
 urbitClient.listen(dot_ack)
